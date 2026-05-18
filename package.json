@@ -1,0 +1,30 @@
+{
+  "name": "backend-code",
+  "version": "1.0.0",
+  "description": "I am learning backend with node js ",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akash4590/backend-code.git"
+  },
+  "keywords": [
+    "Node",
+    "js",
+    "express",
+    "js"
+  ],
+  "author": "Akash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akash4590/backend-code/issues"
+  },
+  "homepage": "https://github.com/Akash4590/backend-code#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
