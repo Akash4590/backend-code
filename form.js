@@ -33,7 +33,7 @@
 const http = require('http');
 const fs  = require('fs');
 const querystring = require('querystring');
-const { buffer } = require('stream/consumers');
+
 http.createServer((req,resp)=>{
     fs.readFile("html/from.html",'utf-8',(err,data)=>{
     if(err){
