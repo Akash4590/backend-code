@@ -33,7 +33,6 @@
 const http = require('http');
 const fs  = require('fs');
 const querystring = require('querystring');
-
 http.createServer((req,resp)=>{
     fs.readFile("html/from.html",'utf-8',(err,data)=>{
     if(err){
@@ -53,12 +52,12 @@ http.createServer((req,resp)=>{
         req.on("end",()=>{
             let rawdata = Buffer.concat(databody).toString();
             let readabledata = querystring.parse(rawdata);
-        
-            let datastring = "My name is " + readabledata.name +"my email id is "+readabledata.email;
-             console.log(readabledata);
+    
+            let datastring = "My name is " + readabledata.name + " and my email  is "+ readabledata.email;
+             console.log(datastring);
             // fs.writeFileSync("text/"+readabledata.name+".txt",datastring);
             // console.log("file created");
-            fs.writeFile("text/"+readabledata.name+".txt",datastring,'utf-8',(err)=>{
+            fs.writeFile("text/"+ readabledata.name +".txt",datastring,'utf-8',(err)=>{
                 if(err){
                     resp.end("internal server error");
                     return false;
